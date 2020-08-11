@@ -73,8 +73,5 @@ public function __construct(GuestTicketRepositoryInterface $guestRepository)
       return view('Guest.ShowTicket',compact('guestTicket'));
     }
 
-   public function ticketDashboard($referenceId)
-   {
-       # code...
-   }
+   
 }

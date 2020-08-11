@@ -11,9 +11,7 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 
 /*route for test purpose*/
 Route::get('/createTestUser',function () {
@@ -30,7 +28,6 @@ Route::get('/createTestUser',function () {
 Guest User Required Routes
 */
 Route::get('/','Guest\GuestTicketController@welcome');
-// Route::get('/tickets//{referenceId}','Guest\GuestTicketController@ticketDashboard');
 Route::resource('/tickets','Guest\GuestTicketController', ['except' => ['edit', 'update', 'destroy']]);
 
 
